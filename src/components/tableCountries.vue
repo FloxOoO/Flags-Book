@@ -44,7 +44,7 @@ function openGoogleMaps(countrieURL: string): void {
 
 watch(() => props.selectedTitle, getCountries, { immediate: true });
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 @mixin textcard {
   font-family: "Inter";
   font-style: normal;

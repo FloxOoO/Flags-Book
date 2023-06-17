@@ -31,7 +31,7 @@ onErrorCaptured(e => {
 })
 </script>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 .page {
   position: relative;
   display: flex;

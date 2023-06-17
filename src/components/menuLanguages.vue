@@ -45,7 +45,7 @@ const menuTitles: Array<string> = [
   "German"
 ];
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 .languages {
   width: 100%;
   position: sticky;
