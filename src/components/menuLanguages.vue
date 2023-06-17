@@ -63,7 +63,7 @@ const menuTitles: Array<string> = [
 
       @media (max-width: 500px) {
         font-size: 28px;
-        line-height: 61px;
+        line-height: 55px;
       }
     }
 
@@ -90,6 +90,10 @@ const menuTitles: Array<string> = [
         background: #058cd9;
       }
     }
+  }
+
+  @media (max-width: 500px) {
+    top: 0px;
   }
 }
 </style>

@@ -52,8 +52,7 @@ onErrorCaptured(e => {
   margin: 90px 36px 0px 36px;
 
   @media (max-width: 500px) {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: 0px 8px 0px 8px;
   }
 }
 .error {
