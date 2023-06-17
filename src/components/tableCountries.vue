@@ -57,6 +57,9 @@ watch(() => props.selectedTitle, getCountries, { immediate: true });
   @media (max-width: 780px) {
     font-size: 18px;
   }
+  @media (max-width: 660px) {
+    font-size: 14px;
+  }
 }
 .countries {
   display: flex;
@@ -85,6 +88,10 @@ watch(() => props.selectedTitle, getCountries, { immediate: true });
       min-width: 300px;
       min-height: 300px;
     }
+    @media (max-width: 660px) {
+      min-width: 200px;
+      min-height: 200px;
+    }
   }
 }
 .flag {
@@ -105,6 +112,10 @@ watch(() => props.selectedTitle, getCountries, { immediate: true });
   @media (max-width: 780px) {
     transition: .3s;
     padding-bottom: 300px;
+  }
+  @media (max-width: 660px) {
+    transition: .3s;
+    padding-bottom: 200px;
   }
 }
 .description {
