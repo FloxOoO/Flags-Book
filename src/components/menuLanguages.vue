@@ -16,13 +16,12 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Ref } from 'vue'
 
 const emit = defineEmits<{
   'selected-title': [title: string]
 }>()
 
-const activeTitle: Ref<string> = ref('Все')
+const activeTitle = ref('Все')
 
 function switchTitle(title: string): void {
   activeTitle.value = title

@@ -6,7 +6,7 @@
     <div class="page__rightcolumn">
       <h1 v-if="error" class="error"> {{ error }} </h1>
       <div v-else class="container">
-        <suspense>
+        <suspense> <!-- экспериментальная функция vue -->
           <table-countries :selected-title="selectedTitle" />
           <template #fallback> Загрузка... </template>
         </suspense>
@@ -15,12 +15,12 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Ref, ref, onErrorCaptured } from "vue";
+import { ref, onErrorCaptured } from "vue";
 import menuLanguages from "./components/menuLanguages.vue";
 import tableCountries from "./components/tableCountries.vue";
 
-const selectedTitle: Ref<string> = ref("");
-const error: Ref<string> = ref("");
+const selectedTitle = ref("");
+const error = ref("");
 
 function switchTitle(title: string): void {
   selectedTitle.value = title;
