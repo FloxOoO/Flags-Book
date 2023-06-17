@@ -49,10 +49,11 @@ onErrorCaptured(e => {
   }
 }
 .container {
-  margin: 90px 84px 0px 36px;
+  margin: 90px 36px 0px 36px;
 
   @media (max-width: 500px) {
     margin-left: 18px;
+    margin-right: 18px;
   }
 }
 .error {
